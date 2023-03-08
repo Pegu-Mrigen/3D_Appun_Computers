@@ -7,13 +7,15 @@ import Test from "./components/Test";
 
 const Container = styled.div`
   height: 100vh;
+  width: 100%;
+  overflow: hidden;
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
   overflow-y: auto;
   scrollbar-width: none;
   color: white;
   background: url("./img/bg.png");
-  background-size: 100vw 100vh;
+  background-size: cover;
   // background-repeat: no-repeat;
   &::-webkit-scrollbar {
     display: none;
