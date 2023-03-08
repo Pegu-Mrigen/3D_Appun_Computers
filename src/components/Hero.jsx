@@ -8,7 +8,7 @@ import { OrbitControls } from "@react-three/drei";
 import Cube from "./Cube";
 
 const Section = styled.div`
-  height: 100vh;
+  height: 100;
   width: 100%;
   scroll-snap-align: center;
   display: flex;
@@ -16,16 +16,16 @@ const Section = styled.div`
   align-items: center;
   justify-content: space-between;
   @media screen and (max-width: 768px) {
-    height: 200vh;
+    height: 200%;
   }
   @media screen and (max-width: 425px) {
     height: 100%;
   }
 `;
 const Container = styled.div`
-  height: 100%;
+  height: 100vh;
   scroll-snap-align: center;
-  width: 1400px;
+  max-width: 1400px;
   display: flex;
   justify-content: space-between;
   @media screen and (max-width: 768px) {
@@ -47,8 +47,10 @@ const Left = styled.div`
   }
 `;
 const Title = styled.h1`
-  margin-top: -70px;
+gap: 50px;
+  margin-top: 30px;
   font-size: 70px;
+  height: 100%;
 
   @media screen and (max-width: 768px) {
     text-align: center;

@@ -6,7 +6,7 @@ import Who from "./components/Who";
 import Test from "./components/Test";
 
 const Container = styled.div`
-  height: 100vh;
+  height: 100%;
   width: 100%;
   overflow: hidden;
   scroll-snap-type: y mandatory;
