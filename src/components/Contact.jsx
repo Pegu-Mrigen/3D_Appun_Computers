@@ -6,7 +6,7 @@ import { useRef } from "react";
 import { useState } from "react";
 
 const Section = styled.div`
-  height: 100vh;
+  height: 100%;
   scroll-snap-align: center;
 `;
 const Container = styled.div`
@@ -25,7 +25,6 @@ const Left = styled.div`
     justify-content: center;
   }
   @media screen and (max-width: 425px) {
-    
     margin-top: -400px;
   }
 `;
@@ -70,6 +69,19 @@ const Right = styled.div`
   justify-content: center;
   @media screen and (max-width: 768px) {
     display: none;
+  }
+`;
+const Footer = styled.div`
+  width: 100%;
+  margin: -50px 0;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  @media screen and (max-width: 768px) {
+    padding: 20px 0;
+  }
+  @media screen and (max-width: 425px) {
+    margin: -150px 0;
   }
 `;
 
@@ -123,6 +135,9 @@ const Contact = () => {
           <Map id="root1" />
         </Right>
       </Container>
+      <Footer>
+        <p> APPUN 2023. All Rights Reserved.</p>
+      </Footer>
     </Section>
   );
 };
