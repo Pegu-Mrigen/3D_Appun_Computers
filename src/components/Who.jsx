@@ -59,7 +59,9 @@ const Subtitle = styled.h2`
   color: blue;
 `;
 const Desc = styled.p`
-font-size: 14px;
+  font-size: 14px;
+  display: flex;
+  text-align: center;
 `;
 const Button = styled.button`
   background-color: blue;
