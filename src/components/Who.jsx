@@ -29,8 +29,7 @@ const Title = styled.h1`
   font-size: 70px;
   text-align: center;
   @media screen and (max-width: 768px) {
-    font-size: 6
-    0px;
+    font-size: 60px;
   }
   @media only screen and (max-width: 425px) {
     font-size: 45px;

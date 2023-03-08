@@ -76,6 +76,7 @@ const Desc = styled.p`
   color: lightgray;
   display: flex;
   text-align: center;
+  padding: 10px;
 `;
 const Button = styled.button`
   background-color: blue;
