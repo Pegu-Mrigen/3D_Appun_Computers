@@ -105,13 +105,13 @@ const Img = styled.img`
   left: 0;
   right: 0;
   margin: auto;
-  animation: animate 10s infinite ease alternate-reverse;
+  animation: animate 2s infinite ease alternate-reverse;
   @media screen and (max-width: 768px) {
     height: 100%;
     width: 100%;
   }
   @keyframes animate {
-    12.5% {
+    /* 12.5% {
       transform: translateX(260px);
     }
     25% {
@@ -133,7 +133,7 @@ const Img = styled.img`
     }
     87.5% {
       transform: translateY(40px);
-    }
+    } */
     100% {
       transform: translateY(-40px);
     }
@@ -172,7 +172,7 @@ const Hero = () => {
               <MeshDistortMaterial
                 color="blue"
                 attach="material"
-                distort={1.2}
+                distort={1}
                 speed={3}
               />
             </Sphere>
