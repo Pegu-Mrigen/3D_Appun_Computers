@@ -9,6 +9,7 @@ import Cube from "./Cube";
 
 const Section = styled.div`
   height: 100vh;
+  width: 100%;
   scroll-snap-align: center;
   display: flex;
   flex-direction: column;
