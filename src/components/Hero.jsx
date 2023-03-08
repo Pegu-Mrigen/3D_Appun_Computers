@@ -43,12 +43,14 @@ const Left = styled.div`
   }
 `;
 const Title = styled.h1`
-margin-top: -70px;
+  margin-top: -70px;
   font-size: 70px;
+
   @media screen and (max-width: 768px) {
     text-align: center;
     font-size: 60px;
   }
+  
 `;
 const WhatWeDo = styled.div`
   display: flex;
@@ -80,7 +82,6 @@ const Button = styled.button`
   @media screen and (max-width: 768px) {
     margin: -20px;
   }
-  
 `;
 const Right = styled.div`
   flex: 3;
@@ -88,7 +89,6 @@ const Right = styled.div`
   @media screen and (max-width: 768px) {
     flex: 1;
     width: 100%;
-    
   }
 `;
 const Img = styled.img`

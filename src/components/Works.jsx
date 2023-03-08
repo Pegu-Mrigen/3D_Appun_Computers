@@ -1,15 +1,17 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import Development from "./Development";
-import Publishing from "./Publishing";
-import WebDesign from "./WebDesign";
+import Publishing from "./Application";
+import WebDesign from "./WebsiteBuilding";
+import Application from "./Application";
+import WebsiteBuilding from "./WebsiteBuilding";
 
 const data = [
-  "Web Design",
+  // "Web Design",
+  "Website Building",
   "Development",
   "Application",
-  "Website Building",
-  "Publishing",
+  // "Publishing",
 ];
 
 const Section = styled.div`
@@ -21,6 +23,9 @@ const Section = styled.div`
   color: black;
   font-size: 14px;
   font-weight: 300;
+  @media screen and (max-width: 768px) {
+    margin-bottom: 250px;
+  }
 `;
 const Container = styled.div`
   width: 1400px;
@@ -29,6 +34,7 @@ const Container = styled.div`
   @media screen and (max-width: 768px) {
     width: 100%;
     flex-direction: column;
+    margin-bottom: 150px;
   }
 `;
 const Left = styled.div`
@@ -98,12 +104,12 @@ const Works = () => {
           </List>
         </Left>
         <Right>
-          {work == "Web Design" ? (
-            <WebDesign />
+          {work == "Website Building" ? (
+            <WebsiteBuilding />
           ) : work === "Development" ? (
             <Development />
           ) : (
-            <Publishing />
+            <Application />
           )}
         </Right>
       </Container>

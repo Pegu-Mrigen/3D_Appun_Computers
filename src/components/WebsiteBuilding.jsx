@@ -14,16 +14,12 @@ const Desc = styled.div`
   position: absolute;
   top: 100px;
   right: 100px;
-  @media screen and (max-width: 768px) {
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    margin: auto;
+  @media only screen and (max-width: 768px) {
+    display: none;
   }
 `;
 
-const WebDesign = () => {
+const WebsiteBuilding = () => {
   return (
     <>
       <Canvas>
@@ -33,11 +29,11 @@ const WebDesign = () => {
         <OrbitControls enableZoom={false} autoRotate />
       </Canvas>
       <Desc>
-        We design websites with a strong focus on user experience and
-        ensuring fast grow of business.
+        We design websites with a strong focus on user experience and ensuring
+        fast grow of business.
       </Desc>
     </>
   );
 };
 
-export default WebDesign;
+export default WebsiteBuilding;
