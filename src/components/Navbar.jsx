@@ -6,13 +6,15 @@ import styled from "styled-components";
 const Section = styled.div`
   display: flex;
   justify-content: center;
-  /* align-items: center; */
+  align-items: center;
+  overflow: hidden;
+
   @media screen and (max-width: 768px) {
     width: 100%;
   }
 `;
 const Container = styled.div`
-  max-width: 1400px;
+  width: 1400px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -20,7 +22,6 @@ const Container = styled.div`
   @media screen and (max-width: 768px) {
     width: 100%;
     padding: 10px;
-    
   }
 `;
 const Links = styled.div`

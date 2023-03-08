@@ -8,26 +8,25 @@ import { OrbitControls } from "@react-three/drei";
 import Cube from "./Cube";
 
 const Section = styled.div`
-  height: 100;
-  width: 100%;
+  height: 100vh;
   scroll-snap-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   @media screen and (max-width: 768px) {
-    height: 200%;
-  }
-  @media screen and (max-width: 425px) {
-    height: 100%;
+    height: 200vh;
   }
 `;
 const Container = styled.div`
-  height: 100vh;
+  height: 100%;
   scroll-snap-align: center;
-  max-width: 1400px;
+  width: 1400px;
   display: flex;
   justify-content: space-between;
+  @media screen and (max-width: 1024px) {
+    width: 100vw;
+  }
   @media screen and (max-width: 768px) {
     width: 100%;
     flex-direction: column;
@@ -41,26 +40,17 @@ const Left = styled.div`
   flex-direction: column;
   justify-content: center;
   gap: 20px;
+  @media screen and (max-width: 1024px) {
+    padding: 0 20px;
+  }
   @media screen and (max-width: 768px) {
     flex: 1;
     align-items: center;
   }
 `;
 const Title = styled.h1`
-gap: 50px;
-  margin-top: 30px;
   font-size: 70px;
-  height: 100%;
-
   @media screen and (max-width: 768px) {
-    text-align: center;
-    font-size: 60px;
-  }
-  @media screen and (max-width: 425px) {
-    text-align: center;
-    font-size: 50px;
-  }
-  @media screen and (max-width: 320px) {
     text-align: center;
     font-size: 40px;
   }
@@ -79,9 +69,10 @@ const Subtitle = styled.h2`
 const Desc = styled.p`
   font-size: 24px;
   color: lightgray;
-  display: flex;
-  text-align: center;
-  padding: 10px;
+  @media screen and (max-width: 768px) {
+    text-align: center;
+    font-size: 14px;
+  }
 `;
 const Button = styled.button`
   background-color: blue;
@@ -102,9 +93,6 @@ const Right = styled.div`
   @media screen and (max-width: 768px) {
     flex: 1;
     width: 100%;
-  }
-  @media screen and (max-width: 425px) {
-    display: none;
   }
 `;
 const Img = styled.img`

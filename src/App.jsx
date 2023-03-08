@@ -6,26 +6,21 @@ import Who from "./components/Who";
 import Test from "./components/Test";
 
 const Container = styled.div`
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
+  height: 100vh;
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
   overflow-y: auto;
   scrollbar-width: none;
   color: white;
   background: url("./img/bg.png");
-  background-size: cover;
+  background-size: 100vw 100vh;
   // background-repeat: no-repeat;
   &::-webkit-scrollbar {
     display: none;
   }
-  @media screen and (max-width: 768px) {
-    scroll-snap-type: none;
-    scroll-behavior: none;
-  }
-`;
 
+  
+`;
 function App() {
   return (
     <Container className="App">

@@ -21,6 +21,9 @@ const Left = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  @media screen and (max-width: 1024px) {
+    padding: 0 20px;
+  }
   @media screen and (max-width: 768px) {
     justify-content: center;
   }
@@ -33,12 +36,12 @@ const Title = styled.h1`
   font-weight: 200;
 `;
 const Form = styled.form`
-  width: 500px;
+  max-width: 500px;
   display: flex;
   flex-direction: column;
   gap: 25px;
   @media screen and (max-width: 768px) {
-    width: 300px;
+    max-width: 300px;
   }
 `;
 const Input = styled.input`
