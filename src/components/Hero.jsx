@@ -50,11 +50,11 @@ const Title = styled.h1`
     text-align: center;
     font-size: 60px;
   }
-  @media screen and (max-width: 425) {
+  @media screen and (max-width: 425px) {
     text-align: center;
     font-size: 50px;
   }
-  @media screen and (max-width: 320) {
+  @media screen and (max-width: 320px) {
     text-align: center;
     font-size: 40px;
   }
