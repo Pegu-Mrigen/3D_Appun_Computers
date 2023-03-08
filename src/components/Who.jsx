@@ -27,11 +27,15 @@ const Left = styled.div`
 const Img = styled.img``;
 const Title = styled.h1`
   font-size: 70px;
+  text-align: center;
   @media screen and (max-width: 768px) {
-    font-size: 60px;
-  }
-  @media only screen and (max-width: 325px) {
     font-size: 50px;
+  }
+  @media only screen and (max-width: 425px) {
+    font-size: 30px;
+  }
+  @media only screen and (max-width: 320px) {
+    font-size: 20px;
   }
 `;
 
@@ -62,6 +66,18 @@ const Desc = styled.p`
   font-size: 14px;
   display: flex;
   text-align: center;
+  @media screen and (max-width: 768px) {
+    text-align: center;
+    font-size: 12px;
+  }
+  @media screen and (max-width: 425px) {
+    text-align: center;
+    font-size: 10px;
+  }
+  @media screen and (max-width: 320px) {
+    text-align: center;
+    font-size: 8px;
+  }
 `;
 const Button = styled.button`
   background-color: blue;
