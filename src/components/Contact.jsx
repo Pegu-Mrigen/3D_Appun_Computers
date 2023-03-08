@@ -24,6 +24,10 @@ const Left = styled.div`
   @media screen and (max-width: 768px) {
     justify-content: center;
   }
+  @media screen and (max-width: 425px) {
+    
+    margin-top: -400px;
+  }
 `;
 
 const Title = styled.h1`

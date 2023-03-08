@@ -51,6 +51,9 @@ const List = styled.ul`
   display: flex;
   flex-direction: column;
   gap: 20px;
+  @media screen and (max-width: 768px) {
+    margin: -250px 0px;
+  }
 `;
 const ListItem = styled.li`
   font-size: 80px;
@@ -60,10 +63,12 @@ const ListItem = styled.li`
   -webkit-text-stroke: 1px white;
   position: relative;
   @media screen and (max-width: 768px) {
+    text-align: center;
     font-size: 30px;
     color: white;
     -webkit-text-stroke: 0px;
   }
+
   ::after {
     content: "${(props) => props.text}";
     position: absolute;
@@ -87,6 +92,8 @@ const ListItem = styled.li`
 `;
 const Right = styled.div`
   flex: 1;
+  @media screen and (max-width: 425px) {
+  }
 `;
 
 const Works = () => {

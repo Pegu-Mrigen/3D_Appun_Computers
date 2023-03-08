@@ -18,6 +18,9 @@ const Section = styled.div`
   @media screen and (max-width: 768px) {
     height: 200vh;
   }
+  @media screen and (max-width: 425px) {
+    height: 100%;
+  }
 `;
 const Container = styled.div`
   height: 100%;
@@ -97,6 +100,9 @@ const Right = styled.div`
   @media screen and (max-width: 768px) {
     flex: 1;
     width: 100%;
+  }
+  @media screen and (max-width: 425px) {
+    display: none;
   }
 `;
 const Img = styled.img`

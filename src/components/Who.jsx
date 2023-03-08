@@ -33,6 +33,7 @@ const Title = styled.h1`
   }
   @media only screen and (max-width: 425px) {
     font-size: 45px;
+    margin-top: -80px;
   }
   @media only screen and (max-width: 320px) {
     font-size: 35px;
