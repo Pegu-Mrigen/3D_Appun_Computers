@@ -30,7 +30,7 @@ const Title = styled.h1`
   @media screen and (max-width: 768px) {
     font-size: 60px;
   }
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 325px) {
     font-size: 50px;
   }
 `;
@@ -58,7 +58,9 @@ const WhatWeDo = styled.div`
 const Subtitle = styled.h2`
   color: blue;
 `;
-const Desc = styled.p``;
+const Desc = styled.p`
+font-size: 14px;
+`;
 const Button = styled.button`
   background-color: blue;
   color: white;
