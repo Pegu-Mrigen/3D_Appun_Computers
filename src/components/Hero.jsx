@@ -50,7 +50,14 @@ const Title = styled.h1`
     text-align: center;
     font-size: 60px;
   }
-  
+  @media screen and (max-width: 425) {
+    text-align: center;
+    font-size: 50px;
+  }
+  @media screen and (max-width: 320) {
+    text-align: center;
+    font-size: 40px;
+  }
 `;
 const WhatWeDo = styled.div`
   display: flex;
@@ -66,9 +73,8 @@ const Subtitle = styled.h2`
 const Desc = styled.p`
   font-size: 24px;
   color: lightgray;
-  @media screen and (max-width: 768px) {
-    text-align: center;
-  }
+  display: flex;
+  text-align: center;
 `;
 const Button = styled.button`
   background-color: blue;
