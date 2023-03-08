@@ -27,16 +27,19 @@ const Left = styled.div`
 const Img = styled.img``;
 const Title = styled.h1`
   font-size: 70px;
-  text-align: center;
+
   @media screen and (max-width: 768px) {
     font-size: 60px;
+    text-align: center;
   }
   @media only screen and (max-width: 425px) {
     font-size: 45px;
     margin-top: -80px;
+    text-align: center;
   }
   @media only screen and (max-width: 320px) {
     font-size: 35px;
+    text-align: center;
   }
 `;
 
