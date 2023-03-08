@@ -29,13 +29,14 @@ const Title = styled.h1`
   font-size: 70px;
   text-align: center;
   @media screen and (max-width: 768px) {
-    font-size: 50px;
+    font-size: 6
+    0px;
   }
   @media only screen and (max-width: 425px) {
-    font-size: 30px;
+    font-size: 45px;
   }
   @media only screen and (max-width: 320px) {
-    font-size: 20px;
+    font-size: 35px;
   }
 `;
 
