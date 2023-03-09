@@ -18,7 +18,7 @@ const Section = styled.div`
     height: 200vh;
   }
   @media screen and (max-width: 375px) {
-    margin: -50px 0;
+    margin: 0;
   }
 `;
 const Container = styled.div`
