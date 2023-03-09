@@ -17,6 +17,9 @@ const Section = styled.div`
   @media screen and (max-width: 768px) {
     height: 200vh;
   }
+  @media screen and (max-width: 375px) {
+    margin: -50px 0;
+  }
 `;
 const Container = styled.div`
   height: 100%;

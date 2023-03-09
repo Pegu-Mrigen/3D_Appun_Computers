@@ -67,21 +67,15 @@ const Subtitle = styled.h2`
   color: blue;
 `;
 const Desc = styled.p`
-  font-size: 14px;
+  font-size: 30px;
   display: flex;
   text-align: center;
-  @media screen and (max-width: 768px) {
-    text-align: center;
-    font-size: 12px;
-  }
+  
   @media screen and (max-width: 425px) {
     text-align: center;
-    font-size: 10px;
+    font-size: 15px;
   }
-  @media screen and (max-width: 320px) {
-    text-align: center;
-    font-size: 8px;
-  }
+  
 `;
 const Button = styled.button`
   background-color: blue;
