@@ -36,13 +36,14 @@ const Title = styled.h1`
   font-weight: 200;
 `;
 const Form = styled.form`
-  max-width: 500px;
+  width: 500px;
   display: flex;
   flex-direction: column;
   gap: 25px;
   @media screen and (max-width: 768px) {
-    max-width: 300px;
+    width: 90%;
   }
+  
 `;
 const Input = styled.input`
   padding: 20px;
