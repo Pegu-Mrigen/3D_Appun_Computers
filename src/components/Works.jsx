@@ -44,6 +44,11 @@ const Left = styled.div`
   @media screen and (max-width: 768px) {
     padding: 20px;
     justify-content: center;
+    display: flex;
+    
+  }
+  @media screen and (max-width: 425px) {
+    margin-top: 50px;
   }
 `;
 const List = styled.ul`
@@ -52,7 +57,10 @@ const List = styled.ul`
   flex-direction: column;
   gap: 20px;
   @media screen and (max-width: 768px) {
-    margin: -250px 0px;
+    padding: 20px;
+    justify-content: center;
+    
+    
   }
 `;
 const ListItem = styled.li`
